@@ -1,0 +1,497 @@
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 37, in greet_user
+    update.message.reply_text(text)
+AttributeError: 'CallbackContext' object has no attribute 'message'
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 37, in greet_user
+    update.message.reply_text(text)
+AttributeError: 'CallbackContext' object has no attribute 'message'
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+TypeError: greet_user() missing 1 required positional argument: 'context'
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+TypeError: greet_user() missing 1 required positional argument: 'context'
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+TypeError: greet_user() missing 1 required positional argument: 'context'
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+TypeError: talk_to_me() missing 1 required positional argument: 'context'
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 47, in planets
+    planet = update.message.text
+AttributeError: 'CallbackContext' object has no attribute 'message'
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 47, in planets
+    planet = update.message.text
+AttributeError: 'CallbackContext' object has no attribute 'message'
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 43, in talk_to_me
+    m = ephem.Mars()
+NameError: name 'ephem' is not defined
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 43, in talk_to_me
+    m = ephem.Mars()
+NameError: name 'ephem' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 43, in talk_to_me
+    m = ephem.Mars()
+NameError: name 'ephem' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 43, in talk_to_me
+    m = ephem.Mars()
+NameError: name 'ephem' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 44, in talk_to_me
+    m = ephem.Mars()
+NameError: name 'ephem' is not defined
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 44, in talk_to_me
+    print('Mars')
+NameError: name 'ephem' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 45, in talk_to_me
+    m = ephem.Mars()
+NameError: name 'ephem' is not defined
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 45, in talk_to_me
+    m = ephem.Mars()
+NameError: name 'ephem' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 44, in talk_to_me
+    m = ephem.Mars(now)
+NameError: name 'ephem' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 46, in talk_to_me
+    update.message.reply_text('Mars is in ' + ephem.constellation(m))
+TypeError: you cannot ask about the constellation in which a body lies until you have used compute() to determine its position
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 45, in talk_to_me
+    result = ephem.constellation(m)
+TypeError: you cannot ask about the constellation in which a body lies until you have used compute() to determine its position
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 45, in talk_to_me
+    result = ephem.constellation(m)
+TypeError: you cannot ask about the constellation in which a body lies until you have used compute() to determine its position
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 44, in talk_to_me
+    m = ephem.Mars()
+NameError: name 'ephem' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 44, in talk_to_me
+    m = ephem.Mars()
+NameError: name 'ephem' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 44, in talk_to_me
+    m = ephem.Mars()
+NameError: name 'ephem' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+TypeError: talk_to_me() missing 1 required positional argument: 'context'
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27D4048>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27D4488>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27D4608>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates
+telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27D4A08>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\contrib\socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27D4A08>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\utils\request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27D4A08>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\updater.py", line 380, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\updater.py", line 341, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "<decorator-gen-31>", line 2, in get_updates
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\bot.py", line 2136, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\utils\request.py", line 334, in post
+    **urlopen_kwargs)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\utils\request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27D4A08>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F3E17848>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F3DFB5C8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F3E329C8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates
+telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F3E32A88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\contrib\socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F3E32A88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\utils\request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F3E32A88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\updater.py", line 380, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\updater.py", line 341, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "<decorator-gen-31>", line 2, in get_updates
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\bot.py", line 2136, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\utils\request.py", line 334, in post
+    **urlopen_kwargs)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\utils\request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F3E32A88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27D4F08>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27DD1C8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27B3988>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates
+telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27B3F88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\contrib\socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27B3F88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\utils\request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27B3F88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\updater.py", line 380, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\updater.py", line 341, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "<decorator-gen-31>", line 2, in get_updates
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\bot.py", line 2136, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\utils\request.py", line 334, in post
+    **urlopen_kwargs)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\utils\request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1295725652:AAFyQ7F_PN70ECbYinmV5MDSUwpYdwFL1Rg/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000016F27B3F88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 45, in talk_to_me
+    print(ephem.constellation(m))
+TypeError: you cannot ask about the constellation in which a body lies until you have used compute() to determine its position
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 44, in talk_to_me
+    p = ephem.planet()
+AttributeError: module 'ephem' has no attribute 'planet'
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 44, in talk_to_me
+    p = ephem.planet()
+AttributeError: module 'ephem' has no attribute 'planet'
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 45, in talk_to_me
+    p = ephem.planet()
+AttributeError: module 'ephem' has no attribute 'planet'
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Lera\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "8_ephem_bot.py", line 44, in talk_to_me
+    p = ephem.planet()
+AttributeError: module 'ephem' has no attribute 'planet'
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
