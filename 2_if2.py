@@ -17,16 +17,17 @@
 list1 = ['шмель', 12, 'мухахаха', 'study']
 list2 = ['шмель', 'двенадцать', 'мухаха', 'learn']
 
+
 def main(str1, str2):
-    if type(str1) == str and type(str2) == str:
-        if str1 == str2:
-            return 1
-        elif len(str1) > len(str2):
-            return 2
-        elif str2 == 'learn':
-            return 3
-    else:
+    if not isinstance(str1, str) and isinstance(str2, str):
         return 0
+    elif str1 == str2:
+        return 1
+    elif len(str1) > len(str2):
+        return 2
+    elif str2 == 'learn':
+        return 3
+
     
 if __name__ == "__main__":
     for str1, str2 in zip(list1,list2):

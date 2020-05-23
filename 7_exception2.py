@@ -14,8 +14,8 @@
 
 def get_summ(num_one, num_two):
     try:
-        sum = int(num_one) + int(num_two)
-        return sum
+        result = int(num_one) + int(num_two)
+        return result
     except ValueError:
         return 'Что вы мне подсунули? Это не числа!'
 
