@@ -42,9 +42,13 @@ PLANETS = {
     'Neptune': ephem.Neptune
 }
 
-CITIES = [
-    'Москва', 'Архангельск', 'Калининград', 'Дубна', 'Санкт-Петербург', 'Мурманск', 'Красноярск', 'Дублин', 'Нью-Йорк', 'Амстердам'
-]
+CITIES = {
+    'А': {'Архангельск', 'Амстердам', 'Алматы'},
+    'Д': {'Дубна', 'Дублин'},
+    'К': {'Калининград', 'Казань', 'Красноярск'},
+    'М': {'Москва', 'Мурманск'},
+    'Н': {'Нью-Йорк', 'Норильск'},
+    'С': {'Санкт-Петербург', 'Сиэтл'}}
 
 def greet_user(update, context):
     text = 'Вызван /start'
@@ -71,37 +75,40 @@ def word_form(wordcount):
 
 
 def cities_start(update, context):
-    context.user_data["cities"] = CITIES
+    context.user_data["cities"] = CITIES.copy()
     context.user_data["round"] = 1
     update.message.reply_text('Назовите город')
     return 'cities_main'
 
-
 def cities_main(update, context):
-    user_city = update.message.text
-    print(user_city, context.user_data["round"], context.user_data["cities"], sep = '\n' )
+    user_city = update.message.text.title()
+    if user_city[0] not in context.user_data["cities"].keys():
+        update.message.reply_text('Такого города нет в списке! Назовите другой')
+        return 'cities_main'
+    print(user_city, context.user_data["cities"][user_city[0]], context.user_data["round"])
     if context.user_data["round"] != 1:
         last_char = context.user_data['last_char']
         if not user_city.startswith(last_char):
             update.message.reply_text(f'Город должен быть на букву {last_char}!')
             return 'cities_main'
-    if not user_city in context.user_data["cities"]:
+    if user_city not in context.user_data["cities"][user_city[0]]:
         update.message.reply_text('Такого города нет в списке! Назовите другой')
         return 'cities_main'
-    context.user_data["cities"].remove(user_city)
-    last_char = user_city[-1].upper()
-    print(last_char)
-    try:
-        bot_city = [city for city in context.user_data["cities"] if city.startswith(last_char)][0]
-        update.message.reply_text(bot_city)
-        update.message.reply_text('Ваш ход!')
-        context.user_data["cities"].remove(bot_city)
-        context.user_data['last_char'] = bot_city[-1].upper()
-        context.user_data["round"] += 1
-        return 'cities_main'
-    except IndexError:
+    context.user_data["cities"][user_city[0]].remove(user_city)
+    last_char = [user_city[-2] if user_city[-1] in ['ы', 'ь'] else user_city[-1]][0].upper()
+    print(context.user_data["cities"][user_city[0]], last_char)
+    if last_char not in context.user_data["cities"].keys():
         update.message.reply_text('Я сдаюсь!')
         return ConversationHandler.END
+    if not context.user_data["cities"][last_char]:
+        update.message.reply_text('Я сдаюсь!')
+        return ConversationHandler.END
+    bot_city = context.user_data["cities"][last_char].pop()
+    update.message.reply_text(bot_city)
+    update.message.reply_text('Ваш ход!')
+    context.user_data['last_char'] = [bot_city[-2] if bot_city[-1] in ['ы', 'ь'] else bot_city[-1]][0].upper()
+    context.user_data["round"] += 1
+    return 'cities_main'
 
 
 def cancel(update, context):
@@ -146,4 +153,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-#pass_args=True, pass_user_data=True
